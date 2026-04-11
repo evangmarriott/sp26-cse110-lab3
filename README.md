@@ -1,7 +1,7 @@
 # Lab 2 - Starter
 
 ## Published Site
-https://YOUR_GITHUB_USERNAME.github.io/Lab2_Starter
+https://evangmarriott.github.io/Lab2_Starter
 
 ## Lab Overview
 - **Part 1:** Meeting minutes HTML page built with semantic HTML (no CSS or JS)
