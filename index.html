@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE 110 Group 10 - Sprint 1 Kickoff Meeting</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Meeting minutes for CSE 110 Group 10 Sprint 1 Kickoff" />
+    <meta name="author" content="Evan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+  <body>
+
+    <header>
+      <h1>CSE 110 &mdash; Group 10</h1>
+      <h2>Sprint 1 Kickoff Meeting</h2>
+      <nav>
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#old-business">Old Business</a> |
+        <a href="#new-business">New Business</a> |
+        <a href="#misc">Miscellaneous</a> |
+        <a href="#media">Media</a> |
+        <a href="#feedback">Feedback Form</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- Meeting Overview -->
+      <section id="overview">
+        <h2>Meeting Overview</h2>
+        <p>
+          <strong>Date:</strong> <time datetime="2026-04-10">April 10, 2026</time><br />
+          <strong>Location:</strong> CSE Building, Room 1202<br />
+          <strong>Facilitator:</strong> Evan (Team Lead)<br />
+          <strong>Note Taker:</strong> Alex Chen
+        </p>
+        <hr />
+      </section>
+
+      <!-- Attendance -->
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <p>The following members were <em>present</em> at the meeting:</p>
+        <ul>
+          <li>Evan Marriott &mdash; <b>Team Lead / Project Manager</b></li>
+          <li>Nicole Sutedja &mdash; <b>Team Lead / Project Manager</b></li>
+          <li>Prakhar Shah &mdash; Frontend</li>
+          <li>Aron Wu &mdash; Backend</li>
+          <li>Jensen Guo &mdash; Backend</li>
+          <li>Xuanye Wang &mdash; Backend</li>
+          <li>Kaley &mdash; Frontend</li>
+          <li>Han Yang-Lin &mdash; Backend</li>
+          <li>Ben Luis &mdash; Frontend</li>
+          <li>Bethany Miyamoto &mdash; Frontend</li>
+          <li>Hudson &mdash; Data</li>
+        </ul>
+        <p><em>Absent:</em> None</p>
+        <hr />
+      </section>
+
+      <!-- Agenda -->
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review team charter and roles</li>
+          <li>Discuss project scope for Sprint 1</li>
+          <li>Set up GitHub repository and project board</li>
+          <li>Assign initial tasks</li>
+          <li>Schedule next meeting</li>
+        </ol>
+        <hr />
+      </section>
+
+      <!-- Old Business -->
+      <section id="old-business">
+        <h2>Old Business</h2>
+        <p>Items carried over from the previous meeting or pre-work:</p>
+        <ul>
+          <li>
+            <strong>Team charter draft</strong> &mdash; was assigned last week.
+            Status: <em>completed</em> by all members. Final version uploaded to repo.
+          </li>
+          <li>
+            <strong>GitHub user pages</strong> &mdash; Lab 1 pages should be live.
+            <span>Three members still need to push their pages before Tuesday.</span>
+          </li>
+          <li>
+            <strong>Slack channel setup</strong> &mdash; All members confirmed in <b>#group-10</b>.
+          </li>
+        </ul>
+        <hr />
+      </section>
+
+      <!-- New Business -->
+      <section id="new-business">
+        <h2>New Business</h2>
+
+        <section>
+          <h3>Project Scope: Pomodoro Timer App</h3>
+          <p>
+            The team <strong>unanimously agreed</strong> to build a Pomodoro Timer web app for the
+            course project. Core features scoped for Sprint 1:
+          </p>
+          <ol>
+            <li>Basic 25/5 minute work-break timer</li>
+            <li>Start, pause, and reset controls</li>
+            <li>Session counter</li>
+            <li>Desktop notifications (stretch goal)</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>GitHub Repository Setup</h3>
+          <p>
+            Evan walked the team through the GitHub org (<code>cse110-sp26-group10</code>) and
+            branch protection rules. All members now have write access.
+          </p>
+          <details>
+            <summary>Branch Strategy Notes (click to expand)</summary>
+            <p>
+              We will follow a <strong>feature branch workflow</strong>. All work goes into
+              feature branches and must be reviewed by at least <em>one other team member</em>
+              before merging into <code>main</code>. Direct pushes to <code>main</code> are
+              disabled via branch protection rules.
+            </p>
+            <ul>
+              <li>Naming convention: <code>feature/short-description</code></li>
+              <li>PRs require passing CI checks before merge</li>
+              <li>Squash merging preferred for clean history</li>
+            </ul>
+          </details>
+        </section>
+
+        <section>
+          <h3>Task Assignments</h3>
+          <div>
+            <p>Tasks were assigned as follows for Sprint 1 (due April 24):</p>
+            <ul>
+              <li><strong>Evan + Nicole</strong> &mdash; Sprint planning, task tracking, TA liaison</li>
+              <li><strong>Prakhar + Kaley + Ben + Bethany</strong> &mdash; UI architecture and frontend implementation</li>
+              <li><strong>Aron + Jensen + Xuanye + Han</strong> &mdash; API, data layer, and backend logic</li>
+              <li><strong>Hudson</strong> &mdash; Data modeling and integration</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Next Meeting</h3>
+          <p>
+            Scheduled for <strong>April 17, 2026</strong> at <em>6:00 PM</em> via Zoom.
+            Agenda will include Sprint 1 progress check-in and blockers.
+          </p>
+        </section>
+        <hr />
+      </section>
+
+      <!-- Miscellaneous -->
+      <section id="misc">
+        <h2>Miscellaneous</h2>
+        <p>Comments, questions, and concerns raised during open floor:</p>
+        <ul>
+          <li>
+            <strong>Prakhar:</strong> Asked whether we should use <i>vanilla CSS</i> or a framework.
+            Team agreed to stick with vanilla CSS for now to keep things simple.
+          </li>
+          <li>
+            <strong>Aron:</strong> Flagged that Node.js version differences could cause issues.
+            Added an <code>.nvmrc</code> file to the repo pinning to Node 20.
+          </li>
+          <li>
+            <strong>Kaley:</strong> Requested a shared Figma workspace for design files.
+            <strong>Action item:</strong> Evan to set up Figma org invite by EOD Friday.
+          </li>
+        </ul>
+        <hr />
+      </section>
+
+      <!-- Diagrams / Images -->
+      <section id="media">
+        <h2>Diagrams &amp; Media</h2>
+
+        <section>
+          <h3>Whiteboard: App Architecture</h3>
+          <p>
+            Jordan sketched out the initial component architecture on the whiteboard.
+            Photo taken during the meeting:
+          </p>
+          <img
+            src="assets/whiteboard-architecture.jpg"
+            alt="Whiteboard sketch of Pomodoro app component architecture showing Timer, Controls, and SessionCounter components"
+            width="600"
+          />
+        </section>
+
+        <section>
+          <h3>Audio Recording</h3>
+          <p>30-second audio clip recorded during the task assignment discussion:</p>
+          <audio controls>
+            <source src="assets/meeting-audio.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </section>
+
+        <section>
+          <h3>Video Recording</h3>
+          <p>Short video clip from the whiteboard walkthrough portion of the meeting:</p>
+          <video controls width="600">
+            <source src="assets/meeting-video.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
+        </section>
+
+        <hr />
+      </section>
+
+      <!-- Form -->
+      <section id="feedback">
+        <h2>Post-Meeting Feedback Form</h2>
+        <p>
+          Please fill out this quick form after each meeting so we can improve how we run them.
+          <br />
+          <em>Fields marked with <strong>*</strong> are required.</em>
+        </p>
+
+        <form>
+          <fieldset>
+            <legend>Your Information</legend>
+
+            <p>
+              <label for="name">Full Name *</label><br />
+              <input type="text" id="name" name="name" placeholder="e.g. Alex Chen" required />
+            </p>
+
+            <p>
+              <label for="meeting-date">Meeting Date *</label><br />
+              <input type="date" id="meeting-date" name="meeting-date" />
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Meeting Effectiveness</legend>
+
+            <p>How would you rate the overall meeting? *</p>
+            <label><input type="radio" name="rating" value="excellent" /> Excellent</label><br />
+            <label><input type="radio" name="rating" value="good" /> Good</label><br />
+            <label><input type="radio" name="rating" value="fair" /> Fair</label><br />
+            <label><input type="radio" name="rating" value="poor" /> Poor</label>
+
+            <br /><br />
+
+            <p>Which parts of the meeting went well? (select all that apply)</p>
+            <label><input type="checkbox" name="went-well" value="agenda" /> Clear agenda</label><br />
+            <label><input type="checkbox" name="went-well" value="time" /> Good time management</label><br />
+            <label><input type="checkbox" name="went-well" value="participation" /> Everyone participated</label><br />
+            <label><input type="checkbox" name="went-well" value="decisions" /> Decisions were made</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Feedback</legend>
+
+            <p>
+              <label for="role">Your Role</label><br />
+              <input type="text" id="role" name="role" list="roles" placeholder="Start typing..." />
+              <datalist id="roles">
+                <option value="Team Lead" />
+                <option value="Developer" />
+                <option value="Designer" />
+                <option value="QA Lead" />
+                <option value="Project Manager" />
+              </datalist>
+            </p>
+
+            <p>
+              <label for="sprint">Sprint</label><br />
+              <select id="sprint" name="sprint">
+                <option value="">-- Select Sprint --</option>
+                <option value="1">Sprint 1</option>
+                <option value="2">Sprint 2</option>
+                <option value="3">Sprint 3</option>
+                <option value="4">Sprint 4</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="comments">Additional Comments</label><br />
+              <textarea id="comments" name="comments" rows="5" cols="50"
+                placeholder="Any other feedback or suggestions..."></textarea>
+            </p>
+          </fieldset>
+
+          <button type="submit">Submit Feedback</button>
+          <button type="reset">Clear Form</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <hr />
+      <p>
+        <small>
+          CSE 110 &mdash; Group 10 &mdash; Spring 2026 &bull;
+          <a href="https://github.com/cse110-sp26-group10" target="_blank">GitHub Org</a>
+        </small>
+      </p>
+    </footer>
+
+  </body>
+</html>
