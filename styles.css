@@ -1,0 +1,53 @@
+/* ============================================
+   CSS Variables & Fallbacks
+   ============================================ */
+:root {
+  --primary-color: #2c3e50;
+  --accent: rgb(52, 152, 219);
+  --font-stack: var(--custom-font, 'Inter', sans-serif);
+}
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   Colors — all 4 formats + wider-gamut
+   ============================================ */
+body {
+  background-color: #f4f4f4;             /* hex */
+  color: rgb(44, 62, 80);                /* rgb */
+  font-family: var(--font-stack);
+}
+
+header {
+  background-color: hsl(210, 29%, 24%);  /* hsl */
+  color: white;
+}
+
+a { color: orange; }                     /* color name */
+
+.mixed {
+  background-color: color-mix(in srgb, #2c3e50 60%, white); /* color-mix */
+}
+
+footer {
+  background: color(display-p3 0.17 0.24 0.31); /* wider-gamut */
+  color: white;
+}
+
+/* ============================================
+   Units — 3 relative (%, rem, em) + 3 absolute (px, pt, cm)
+   ============================================ */
+main {
+  width: 90%;           /* % - relative */
+  max-width: 960px;     /* px - absolute */
+  margin: 2rem auto;    /* rem - relative */
+  padding: 1em;         /* em - relative */
+}
+
+h1 { font-size: 24pt; }        /* pt - absolute */
+footer p { font-size: 0.9cm; } /* cm - absolute */
