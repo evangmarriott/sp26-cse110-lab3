@@ -235,3 +235,37 @@ section:has(h2) {
     margin-top: 0.4rem;
   }
 }
+
+/* ============================================
+   Media Queries — responsive layout
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .agenda-grid {
+    grid-template-columns: 1fr;
+  }
+  .attendees {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main {
+    width: 95%;
+    padding: 0.5em;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  #minutes-title {
+    font-size: 1.4rem;
+  }
+  nav a {
+    display: block;
+    margin: 4px 0;
+  }
+  img {
+    min-width: 0;
+    width: 100%;
+  }
+}
