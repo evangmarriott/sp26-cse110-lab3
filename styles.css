@@ -51,3 +51,49 @@ main {
 
 h1 { font-size: 24pt; }        /* pt - absolute */
 footer p { font-size: 0.9cm; } /* cm - absolute */
+
+/* ============================================
+   Box Model
+   ============================================ */
+
+/* MARGIN - longhand */
+section {
+  margin-top: 16px;
+  margin-right: 0px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+}
+
+/* MARGIN - shorthand + auto */
+article {
+  margin: 10px 15px;
+}
+main {
+  margin: 2rem auto;
+}
+
+/* PADDING - longhand */
+header {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+/* PADDING - shorthand */
+p {
+  padding: 8px 16px;
+}
+
+/* BORDER - longhand */
+.card {
+  border-style: solid;
+  border-color: var(--accent);
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+/* BORDER - shorthand */
+header {
+  border: 1px solid #1a252f;
+}
