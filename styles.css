@@ -35,7 +35,7 @@ a { color: orange; }                     /* color name */
 }
 
 footer {
-  background: color(display-p3 0.17 0.24 0.31); /* wider-gamut */
+  background-color: color(display-p3 0.17 0.24 0.31);
   color: white;
 }
 
