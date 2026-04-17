@@ -177,3 +177,61 @@ a:hover {
   border-radius: 6px;
   padding: 12px;
 }
+
+/* ============================================
+   CSS Selectors
+   ============================================ */
+
+/* Class selector */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 1.5rem;
+}
+
+/* ID selector */
+#minutes-title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* Attribute selector */
+a[href^="https"] { font-style: italic; }
+
+/* Pseudo-class selector */
+p:hover { background-color: #eef6fb; }
+
+/* Selector list */
+h2, h3 { font-family: var(--font-stack); }
+
+/* Descendant combinator */
+section p { line-height: 1.6; }
+
+/* Child combinator */
+ul > li { list-style: disc; margin-left: 1.5rem; }
+
+/* General sibling combinator */
+h2 ~ p { color: #555; }
+
+/* Adjacent sibling combinator */
+h2 + p { font-weight: bold; }
+
+/* Combining two selectors */
+section.card { border-left: 4px solid var(--accent); }
+
+/* :has() - 2023 selector */
+section:has(h2) {
+  padding-top: 1.5rem;
+}
+
+/* Nested selectors - 2023 syntax */
+.card {
+  & h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  & p {
+    margin-top: 0.4rem;
+  }
+}
