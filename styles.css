@@ -97,3 +97,83 @@ p {
 header {
   border: 1px solid #1a252f;
 }
+
+/* ============================================
+   Text
+   ============================================ */
+h2 {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* ============================================
+   Display
+   ============================================ */
+.hidden { display: none; }
+.tag { display: inline-block; padding: 4px 10px; }
+nav a { display: inline; }
+.card { display: block; }
+
+/* ============================================
+   Sizing
+   ============================================ */
+img {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+}
+
+/* ============================================
+   Position
+   ============================================ */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: hsl(210, 29%, 30%);
+  z-index: 100;
+  padding: 8px 16px;
+}
+
+.tag {
+  position: relative;
+  top: -2px;
+}
+
+/* ============================================
+   Pseudo-classes
+   ============================================ */
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.tag:active { opacity: 0.7; }
+
+/* ============================================
+   Flexbox
+   ============================================ */
+.attendees {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ============================================
+   Grid
+   ============================================ */
+.agenda-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  grid-auto-rows: minmax(80px, auto);
+}
+
+.grid-item {
+  background-color: #f0f4f8;
+  border-radius: 6px;
+  padding: 12px;
+}
