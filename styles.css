@@ -35,7 +35,7 @@ a { color: orange; }                     /* color name */
 }
 
 footer {
-  background-color: color(display-p3 0.17 0.24 0.31);
+  background-color: #2b3d4f;
   color: white;
 }
 
@@ -225,15 +225,13 @@ section:has(h2) {
 }
 
 /* Nested selectors - 2023 syntax */
-.card {
-  & h3 {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-  }
-  & p {
-    margin-top: 0.4rem;
-  }
+.card h3 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+.card p {
+  margin-top: 0.4rem;
 }
 
 /* ============================================
