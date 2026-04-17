@@ -7,13 +7,22 @@
     <meta name="author" content="Evan" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Internal CSS -->
+    <style>
+      footer { font-size: 0.8em; }
+    </style>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
     <header>
-      <h1>CSE 110 &mdash; Group 10</h1>
+      <h1 id="minutes-title" style="letter-spacing: 2px;">CSE 110 &mdash; Group 10</h1>
       <h2>Sprint 1 Kickoff Meeting</h2>
-      <nav>
+      <nav class="sticky-nav">
         <a href="#attendance">Attendance</a> |
         <a href="#agenda">Agenda</a> |
         <a href="#old-business">Old Business</a> |
@@ -27,7 +36,7 @@
     <main>
 
       <!-- Meeting Overview -->
-      <section id="overview">
+      <section id="overview" class="card">
         <h2>Meeting Overview</h2>
         <p>
           <strong>Date:</strong> <time datetime="2026-04-10">April 10, 2026</time><br />
@@ -39,28 +48,28 @@
       </section>
 
       <!-- Attendance -->
-      <section id="attendance">
+      <section id="attendance" class="card">
         <h2>Attendance</h2>
         <p>The following members were <em>present</em> at the meeting:</p>
-        <ul>
-          <li>Evan Marriott &mdash; <b>Team Lead / Project Manager</b></li>
-          <li>Nicole Sutedja &mdash; <b>Team Lead / Project Manager</b></li>
-          <li>Prakhar Shah &mdash; Frontend</li>
-          <li>Aron Wu &mdash; Backend</li>
-          <li>Jensen Guo &mdash; Backend</li>
-          <li>Xuanye Wang &mdash; Backend</li>
-          <li>Kaley &mdash; Frontend</li>
-          <li>Han Yang-Lin &mdash; Backend</li>
-          <li>Ben Luis &mdash; Frontend</li>
-          <li>Bethany Miyamoto &mdash; Frontend</li>
-          <li>Hudson &mdash; Data</li>
-        </ul>
+        <div class="attendees">
+          <span class="tag">Evan Marriott</span>
+          <span class="tag">Nicole Sutedja</span>
+          <span class="tag">Prakhar Shah</span>
+          <span class="tag">Aron Wu</span>
+          <span class="tag">Jensen Guo</span>
+          <span class="tag">Xuanye Wang</span>
+          <span class="tag">Kaley</span>
+          <span class="tag">Han Yang-Lin</span>
+          <span class="tag">Ben Luis</span>
+          <span class="tag">Bethany Miyamoto</span>
+          <span class="tag">Hudson</span>
+        </div>
         <p><em>Absent:</em> None</p>
         <hr />
       </section>
 
       <!-- Agenda -->
-      <section id="agenda">
+      <section id="agenda" class="card">
         <h2>Agenda</h2>
         <ol>
           <li>Review team charter and roles</li>
@@ -69,11 +78,12 @@
           <li>Assign initial tasks</li>
           <li>Schedule next meeting</li>
         </ol>
+        <p class="hidden">Draft notes - not for display</p>
         <hr />
       </section>
 
       <!-- Old Business -->
-      <section id="old-business">
+      <section id="old-business" class="card">
         <h2>Old Business</h2>
         <p>Items carried over from the previous meeting or pre-work:</p>
         <ul>
@@ -93,7 +103,7 @@
       </section>
 
       <!-- New Business -->
-      <section id="new-business">
+      <section id="new-business" class="card">
         <h2>New Business</h2>
 
         <section>
@@ -134,14 +144,23 @@
 
         <section>
           <h3>Task Assignments</h3>
-          <div>
-            <p>Tasks were assigned as follows for Sprint 1 (due April 24):</p>
-            <ul>
-              <li><strong>Evan + Nicole</strong> &mdash; Sprint planning, task tracking, TA liaison</li>
-              <li><strong>Prakhar + Kaley + Ben + Bethany</strong> &mdash; UI architecture and frontend implementation</li>
-              <li><strong>Aron + Jensen + Xuanye + Han</strong> &mdash; API, data layer, and backend logic</li>
-              <li><strong>Hudson</strong> &mdash; Data modeling and integration</li>
-            </ul>
+          <div class="agenda-grid">
+            <div class="grid-item">
+              <strong>Evan + Nicole</strong>
+              <p>Sprint planning, task tracking, TA liaison</p>
+            </div>
+            <div class="grid-item">
+              <strong>Prakhar + Kaley + Ben + Bethany</strong>
+              <p>UI architecture and frontend implementation</p>
+            </div>
+            <div class="grid-item">
+              <strong>Aron + Jensen + Xuanye + Han</strong>
+              <p>API, data layer, and backend logic</p>
+            </div>
+            <div class="grid-item">
+              <strong>Hudson</strong>
+              <p>Data modeling and integration</p>
+            </div>
           </div>
         </section>
 
@@ -156,7 +175,7 @@
       </section>
 
       <!-- Miscellaneous -->
-      <section id="misc">
+      <section id="misc" class="card">
         <h2>Miscellaneous</h2>
         <p>Comments, questions, and concerns raised during open floor:</p>
         <ul>
@@ -177,7 +196,7 @@
       </section>
 
       <!-- Diagrams / Images -->
-      <section id="media">
+      <section id="media" class="card">
         <h2>Diagrams &amp; Media</h2>
 
         <section>
@@ -215,7 +234,7 @@
       </section>
 
       <!-- Form -->
-      <section id="feedback">
+      <section id="feedback" class="card">
         <h2>Post-Meeting Feedback Form</h2>
         <p>
           Please fill out this quick form after each meeting so we can improve how we run them.
