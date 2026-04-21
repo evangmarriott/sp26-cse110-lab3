@@ -32,6 +32,7 @@ a { color: orange; }                     /* color name */
 
 .mixed {
   background-color: color-mix(in srgb, #2c3e50 60%, white); /* color-mix */
+  color: color(display-p3 0.17 0.24 0.31); /* wider-gamut color() */
 }
 
 footer {
@@ -95,7 +96,7 @@ p {
 
 /* BORDER - shorthand */
 header {
-  border: 1px solid #1a252f;
+  border: 1px solid var(--header-border, #1a252f); /* CSS variable with fallback */
 }
 
 /* ============================================
@@ -225,13 +226,15 @@ section:has(h2) {
 }
 
 /* Nested selectors - 2023 syntax */
-.card h3 {
-  font-size: 1.1rem;
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-.card p {
-  margin-top: 0.4rem;
+.card {
+  & h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  & p {
+    margin-top: 0.4rem;
+  }
 }
 
 /* ============================================
